@@ -1,0 +1,182 @@
+﻿/* ============================
+   🔵 PALETA DENSO REDISEÑADA
+===============================*/
+:root {
+    --denso-blue: #1f4e79;
+    --denso-blue-light: #3b77b4;
+    --denso-blue-dark: #163954;
+    --denso-gray: #6b727a;
+    --denso-light: #eef4fa;
+    --denso-red: #ff6b6b;
+}
+
+/* ============================
+   🔵 HERO SECTION
+===============================*/
+.hero-section {
+    background: linear-gradient(120deg, #ffffff 0%, var(--denso-light) 100%);
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    width: 350px;
+    height: 350px;
+    background: var(--denso-blue);
+    opacity: 0.09;
+    border-radius: 50%;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.badge-denso {
+    background: var(--denso-blue);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: var(--denso-blue-dark);
+    line-height: 1.1;
+    margin-bottom: 1.3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--denso-gray);
+    max-width: 520px;
+    margin-bottom: 2rem;
+}
+
+/* 🔵 BOTÓN */
+.btn-denso-primary {
+    background: var(--denso-blue);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 12px rgba(31, 78, 121, 0.3);
+}
+
+.btn-denso-primary:hover {
+    background: var(--denso-blue-dark);
+    transform: translateY(-2px);
+}
+
+/* ============================
+   🔵 HERO ILLUSTRATION ANIMADA
+===============================*/
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+
+.warehouse-illustration {
+    width: 100%;
+    filter: drop-shadow(0 12px 35px rgba(0,0,0,0.12));
+}
+
+/* ============================
+   🔵 FEATURES
+===============================*/
+.features-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--denso-blue-dark);
+}
+
+.section-subtitle {
+    color: var(--denso-gray);
+}
+
+/* Tarjetas */
+.feature-card {
+    background: #fff;
+    border: 2px solid var(--denso-light);
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--denso-blue);
+    box-shadow: 0 12px 28px rgba(31, 78, 121, 0.18);
+}
+
+/* Icono */
+.feature-icon {
+    width: 85px;
+    height: 85px;
+    background: var(--denso-light);
+    border-radius: 50%;
+    margin: 0 auto 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--denso-blue);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--denso-blue);
+    color: white;
+    transform: scale(1.1);
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--denso-blue-dark);
+    margin-bottom: 0.7rem;
+}
+
+.feature-description {
+    color: var(--denso-gray);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-title { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    .btn-denso-primary {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,82 @@
+﻿/* Estilos para las páginas de Recibos */
+
+/* Tarjetas con efecto hover */
+.hover-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+/* Contenedor de iconos */
+.icon-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Títulos de tarjetas */
+.card-title {
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+/* Texto secundario */
+.text-muted {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Estilos para formularios de recibos */
+.form-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border: 1px solid #dee2e6;
+    font-size: 0.95rem;
+}
+
+/* Focus en inputs - Azul para Recibos */
+.recibos-form .form-control:focus,
+.recibos-form .form-select:focus {
+    border-color: #1b6ec2;
+    box-shadow: 0 0 0 0.2rem rgba(27, 110, 194, 0.15);
+}
+
+/* Focus en inputs - Verde para Entregas */
+.entregas-form .form-control:focus,
+.entregas-form .form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+/* Estilos para tablas */
+.table th {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+/* Bordes suaves en cards */
+.card {
+    border-radius: 0.5rem;
+}
+
+/* Sombras sutiles */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}

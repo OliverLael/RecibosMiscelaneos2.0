@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">¡Bienvenido, @User.Identity.Name!</h4>
+                <p>Has iniciado sesión exitosamente en el sistema de Recibos Misceláneos.</p>
+                <hr>
+                <p class="mb-0">Ahora puedes acceder a todas las funcionalidades del sistema.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-receipt" style="font-size: 3rem; color: #1b6ec2;"></i>
+                    </div>
+                    <h5 class="card-title">Recibos</h5>
+                    <p class="card-text">Gestiona los recibos misceláneos del sistema.</p>
+                    <a asp-controller="Recibos" asp-action="Index" class="btn btn-primary">Ver Recibos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-people" style="font-size: 3rem; color: #1b6ec2;"></i>
+                    </div>
+                    <h5 class="card-title">Usuarios</h5>
+                    <p class="card-text">Administra los usuarios del sistema.</p>
+                    <a href="#" class="btn btn-primary">Ver Usuarios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-graph-up" style="font-size: 3rem; color: #1b6ec2;"></i>
+                    </div>
+                    <h5 class="card-title">Reportes</h5>
+                    <p class="card-text">Genera reportes y estadísticas.</p>
+                    <a href="#" class="btn btn-primary">Ver Reportes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <a asp-action="Logout" asp-controller="Home" class="btn btn-danger btn-lg">
+                <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+            </a>
+        </div>
+    </div>
+</div>

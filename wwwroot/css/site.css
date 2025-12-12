@@ -1,0 +1,138 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Estilos corregidos para el logo */
+img.logo {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Navbar personalizado */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: white !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #2C5F8D !important;
+    font-size: 1.1rem;
+}
+
+    .navbar-brand:hover {
+        color: #1a3a52 !important;
+    }
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #2C5F8D !important;
+    }
+
+a {
+    color: #0077cc;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Layout helper to keep footer at bottom and allow content to grow */
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure main content expands to push footer down.
+   Use this selector if your layout uses a <main> element (typical Razor default). */
+main {
+    flex: 1 0 auto;
+}
+
+/* Footer: flow with document, sit at bottom when content short */
+.footer {
+    position: relative; /* was absolute */
+    margin-top: auto;
+    width: 100%;
+    white-space: normal; /* allow wrapping */
+    line-height: 60px;
+    border-top: 1px solid #e5e5e5; /* keep visual divider */
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0 1rem; /* small horizontal padding to align with page */
+}
+
+/* Full-bleed hero / recuadro celeste:
+   Use by wrapping hero content with an element that has class "full-bleed-hero".
+   Example: <section class="full-bleed-hero"><div class="container"> ... </div></section>
+*/
+.full-bleed-hero {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(44,95,141,0.03), rgba(44,95,141,0.01));
+    padding: 3rem 0; /* vertical space for the hero area */
+    box-sizing: border-box;
+}
+
+/* Keep inner content centered and constrained */
+.full-bleed-hero > .container,
+.full-bleed-hero > .container-fluid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Optional: if hero image needs to align right and scale */
+.full-bleed-hero .hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* End of custom additions */

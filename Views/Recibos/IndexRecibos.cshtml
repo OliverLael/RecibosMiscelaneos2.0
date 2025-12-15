@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Recibos - DENSO";
+}
+
+<!-- Header -->
+<header class="header">
+    <a href="{{ url_for('index') }}"><img src="~/Images/LogoDX-MXA2624.png" alt="Logo Izquierdo" class="logo"></a>
+    <h1>Gestión de Misceláneos</h1>
+</header>
+
+<!-- Contenedor de tarjetas -->
+<main class="cards-container">
+    <!-- Tarjeta 1 -->
+    <a asp-controller="Recibos" asp-action="RecibosMiscelaneos" class="card">
+        <img src="~/Images/LogoValidacion.png" alt="Validación" class="card-img">
+        <h3>Validación de Misceláneos</h3>
+        <p>Revisión al material de Misceláneos para confirmar su recepción en tiempo y forma.</p>
+    </a>
+
+    <!-- Tarjeta 2 -->
+    <a asp-controller="Recibos" asp-action="EntregaMiscelaneos" class="card">
+        <img src="~/Images/EntregaMaterial.png" alt="Entrega" class="card-img">
+        <h3>Entrega de Material</h3>
+        <p>Confirmación de entregar el material al usuario correcto junto con la evidencia necesaria.</p>
+    </a>
+</main>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/IndexRecibos.css" asp-append-version="true" />
+}

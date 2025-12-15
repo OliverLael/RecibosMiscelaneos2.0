@@ -1,182 +1,152 @@
-﻿/* ============================
-   🔵 PALETA DENSO REDISEÑADA
-===============================*/
-:root {
-    --denso-blue: #1f4e79;
-    --denso-blue-light: #3b77b4;
-    --denso-blue-dark: #163954;
-    --denso-gray: #6b727a;
-    --denso-light: #eef4fa;
-    --denso-red: #ff6b6b;
+﻿/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* ============================
-   🔵 HERO SECTION
-===============================*/
-.hero-section {
-    background: linear-gradient(120deg, #ffffff 0%, var(--denso-light) 100%);
-    padding: 90px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::after {
-    content: "";
-    position: absolute;
-    right: -80px;
-    top: -80px;
-    width: 350px;
-    height: 350px;
-    background: var(--denso-blue);
-    opacity: 0.09;
-    border-radius: 50%;
-}
-
-.min-vh-75 {
-    min-height: 75vh;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.badge-denso {
-    background: var(--denso-blue);
-    color: #fff;
-    padding: 10px 24px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.hero-title {
-    font-size: 3.4rem;
-    font-weight: 800;
-    color: var(--denso-blue-dark);
-    line-height: 1.1;
-    margin-bottom: 1.3rem;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--denso-gray);
-    max-width: 520px;
-    margin-bottom: 2rem;
-}
-
-/* 🔵 BOTÓN */
-.btn-denso-primary {
-    background: var(--denso-blue);
-    color: #fff;
-    padding: 14px 32px;
-    border-radius: 10px;
-    font-weight: 600;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.25s ease;
-    box-shadow: 0 4px 12px rgba(31, 78, 121, 0.3);
-}
-
-.btn-denso-primary:hover {
-    background: var(--denso-blue-dark);
-    transform: translateY(-2px);
-}
-
-/* ============================
-   🔵 HERO ILLUSTRATION ANIMADA
-===============================*/
-.hero-image {
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-18px); }
-}
-
-.warehouse-illustration {
-    width: 100%;
-    filter: drop-shadow(0 12px 35px rgba(0,0,0,0.12));
-}
-
-/* ============================
-   🔵 FEATURES
-===============================*/
-.features-section {
-    padding: 80px 0;
-    background: #fff;
-}
-
-.section-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--denso-blue-dark);
-}
-
-.section-subtitle {
-    color: var(--denso-gray);
-}
-
-/* Tarjetas */
-.feature-card {
-    background: #fff;
-    border: 2px solid var(--denso-light);
-    border-radius: 14px;
-    padding: 2rem;
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--denso-blue);
-    box-shadow: 0 12px 28px rgba(31, 78, 121, 0.18);
-}
-
-/* Icono */
-.feature-icon {
-    width: 85px;
-    height: 85px;
-    background: var(--denso-light);
-    border-radius: 50%;
-    margin: 0 auto 1.4rem;
+body {
+    background: black; /* Cambia el fondo a negro */
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: var(--denso-blue);
-    transition: 0.3s ease;
+    align-items: center;
+    height: 100vh;
 }
 
-.feature-card:hover .feature-icon {
-    background: var(--denso-blue);
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ajusta la sombra para que combine con el fondo negro */
+    padding: 20px;
+    width: 400px;
+    color: white; /* Cambia el texto a blanco para que sea visible sobre el fondo negro */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.main-content .welcome-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #b71c1c;
     color: white;
-    transform: scale(1.1);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-.feature-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--denso-blue-dark);
-    margin-bottom: 0.7rem;
+    .btn-primary:hover {
+        background-color: #8e0000;
+    }
+
+.info-section {
+    margin-top: 30px;
 }
 
-.feature-description {
-    color: var(--denso-gray);
-    font-size: 0.95rem;
+    .info-section h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .hero-title { font-size: 2.5rem; }
+    .info-list li {
+        margin-bottom: 10px;
+    }
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
 }
 
-@media (max-width: 768px) {
-    .btn-denso-primary {
-        width: 100%;
-        justify-content: center;
+/* Contenedor de pantalla dividida */
+.split-screen {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Sección de la imagen */
+.image-section {
+    flex: 3; /* Aumenta el tamaño de la imagen */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+/* Sección del contenido */
+.content-section {
+    flex: 2; /* Reduce el tamaño del contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 968px) {
+    .split-screen {
+        flex-direction: column;
+    }
+
+    .image-section {
+        min-height: 30vh;
+    }
+
+    .denso-logo {
+        font-size: 5rem;
+    }
+
+    .content-section {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .denso-logo {
+        font-size: 3.5rem;
     }
 }

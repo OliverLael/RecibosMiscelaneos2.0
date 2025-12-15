@@ -4,7 +4,7 @@ namespace RecibosMiscelaneos2._0.Controllers
 {
     public class RecibosController : Controller
     {
-        public IActionResult Index()
+        public IActionResult IndexRecibos()
         {
             // Verificar autenticación
             if (!User.Identity.IsAuthenticated)
